@@ -55,4 +55,4 @@ Many significant engineering challenges were tackled to make this idea reality. 
 
 At Mechanical Engineering Senior Design Day, we won the award for Best Presentation and went on to place second in the School of Engineering-wide Senior Design Competition.
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/0LzrWOefOeU" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/0LzrWOefOeU" frameborder="0" allowfullscreen></iframe>

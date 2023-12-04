@@ -41,4 +41,4 @@ Our robots were equipped with solenoid goal-shooting mechanisms and ultrasonic s
 We took first place on tournament day!
 
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/MaSbL68Hj4A" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/MaSbL68Hj4A" frameborder="0" allowfullscreen></iframe>
