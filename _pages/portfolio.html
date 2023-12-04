@@ -11,7 +11,6 @@ redirect_from:
 
 {% include base_path %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <style>
 
 #mosaic-container {
@@ -96,6 +95,7 @@ redirect_from:
 
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
 
@@ -110,7 +110,7 @@ redirect_from:
         var max_width = $( "#mosaic-container" ).width();
         const quotient = Math.max(1,Math.floor(max_width/item_width));
         $( "#mosaic" ).width(quotient * item_width);
-    }
+    };
     $( document ).ready(resizeFunc);
     $( window ).on( "resize", resizeFunc);
   
