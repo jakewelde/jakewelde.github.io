@@ -81,7 +81,7 @@ redirect_from:
         {% for post in projects %}
             <a href="{{ base_path }}{{ post.url }}" rel="permalink">
                 <div class="item withImage" >
-                    <div class="thumbnail grayscale" style="background-image: url('{{post.thumbnail}}');"></div>
+                    <div class="thumbnail grayscale" style="background-image: url('{{post.thumbnail | relative_url }}');"></div>
                     <div class="title">
                         {{ post.short_title  | default: post.title }}
                     </div>
