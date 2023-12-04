@@ -24,22 +24,29 @@ import html
 import os
 import re
 
-#todo: incorporate different collection types rather than a catch all publications, requires other changes to template
+
 publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
+    "conference": {
+        "file" : "refs.bib",
         "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
+        "venue-pretext": "",
+        "collection" : {"name":"conference",
+                        "permalink":"/conference/"}
         
     },
     "journal":{
-        "file": "pubs.bib",
+        "file": "refs.bib",
         "venuekey" : "journal",
         "venue-pretext" : "",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
+        "collection" : {"name":"journal",
+                        "permalink":"/journal/"}
+    },
+    "preprint":{
+        "file": "refs.bib",
+        "venuekey" : "preprint",
+        "venue-pretext" : "",
+        "collection" : {"name":"preprint",
+                        "permalink":"/preprint/"}
     } 
 }
 
@@ -92,15 +99,32 @@ for pubsource in publist:
             url_slug = re.sub("\\[.*\\]|[^a-zA-Z0-9_-]", "", clean_title)
             url_slug = url_slug.replace("--","-")
 
-            md_filename = (str(pub_date) + "-" + url_slug + ".md").replace("--","-")
-            html_filename = (str(pub_date) + "-" + url_slug).replace("--","-")
+            md_filename = (bib_id + ".md").replace("--","-")
+            html_filename = (bib_id).replace("--","-")
 
             #Build Citation from text
-            citation = ""
+            authors = ""
 
             #citation authors - todo - add highlighting for primary author?
+            bibdata.entries[bib_id].persons["author"].reverse()
+            last_author = True
             for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+                name = " ".join(author.first_names + author.middle_names + author.last_names)
+                if name == "Jake Welde":
+                    name = "<b>" + name + "</b>"
+                if last_author:
+                    single = name 
+                    if len(bibdata.entries[bib_id].persons["author"]) > 1:
+                        single = "and " + single
+                    last_author = False
+                else:
+                    if len(bibdata.entries[bib_id].persons["author"]) > 2:
+                        single = name + ", " 
+                    else:
+                        single = name + " "
+                authors = single + authors
+
+            citation = authors + ". "
 
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
@@ -137,9 +161,30 @@ for pubsource in publist:
 
             md += "\ncitation: '" + html_escape(citation) + "'"
 
+
+            md += "\nyear: '" + html_escape(str(pub_year)) + "'"
+            md += "\nauthors: '" + (str(authors)) + "'"
+
+            # optional content:
+
+            if "addendum" in b.keys():
+                md += "\naddendum: '" + html_escape(b["addendum"]) + "'"
+            if "arxiv" in b.keys():
+                md += "\narxiv: '" + (b["arxiv"]) + "'"
+            if "pdf" in b.keys():
+                md += "\npdf: '" + (b["pdf"]) + "'"
+            if "video" in b.keys():
+                md += "\nvideo: '" + (b["video"]) + "'"
+            if "talk" in b.keys():
+                md += "\ntalk: '" + (b["talk"]) + "'"
+            if "thumbnail" in b.keys():
+                md += "\nthumbnail: '" + (b["thumbnail"]) + "'"
+
+            md += "\ncitation_key: '" + (bib_id) + "'"
+
+
             md += "\n---"
 
-            
             ## Markdown description for individual page
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
@@ -151,7 +196,7 @@ for pubsource in publist:
 
             md_filename = os.path.basename(md_filename)
 
-            with open("../_publications/" + md_filename, 'w') as f:
+            with open("../_"+publist[pubsource]["collection"]["name"]+"/" + md_filename, 'w') as f:
                 f.write(md)
             print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
         # field may not exist for a reference

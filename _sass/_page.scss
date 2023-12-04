@@ -52,11 +52,12 @@
 
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    // border-bottom: 1px solid $border-color;
   }
 
   p, li, dl {
     font-size: 1em;
+    text-align: justify;
   }
 
   /* paragraph indents */
@@ -399,3 +400,51 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+li.publication_item {
+    line-height: 1.6em;
+    padding-left: 1em;
+    margin-top: 1em;
+}
+
+ul.paper_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top:.5em;
+  }
+  
+  ul.paper_links li {
+    float: left;
+    margin-right: 5pt;
+  }
+  
+  ul.paper_links li a {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    text-decoration: none;
+    margin-right:10px;
+    color: $link-color;
+    border: 1.5px solid $link-color;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 9pt;
+    font-weight: 500;
+    line-height: 9pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+  }
+  
+  ul.paper_links li a:hover {
+    border: 1.5px solid $link-color-hover;
+    color: $link-color-hover;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $link-color-hover;
+  }

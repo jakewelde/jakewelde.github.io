@@ -1,14 +1,117 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+permalink: /
 author_profile: true
+hide_title: true
+title: "Work"
+redirect_from: 
+  - /research/
+  - /research.html
 ---
 
 {% include base_path %}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+#mosaic-container {
+    width: 100%;
+}
 
+    #mosaic {
+        clear: both;
+        width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#mosaic div.withImage {
+    width: 370px;
+    height: 240pt;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 5px 1px #ccc; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 240pt;
+  }
+
+  #mosaic div.thumbnail {
+    -webkit-transition: all 150ms;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 300px ;
+    width: 370px;
+    height: 218pt;
+  }
+
+.grayscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+    
+  .withImage div.title {
+    display: block;
+    padding-top: 4pt;
+    font-size: 14pt;
+    line-height: 24pt;
+    font-weight: 300;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+    text-decoration: none;
+  }
+
+  #mosaic a:hover {
+    text-decoration: none;
+  }
+
+</style>
+
+<div id="mosaic-container">
+
+
+    <div id="mosaic">
+        
+        {% assign projects = site.portfolio | sort: 'year' | reverse  %}
+        {% for post in projects %}
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+                <div class="item withImage" >
+                    <div class="thumbnail grayscale" style="background-image: url('{{post.thumbnail}}');"></div>
+                    <div class="title">
+                        {{ post.short_title  | default: post.title }}
+                    </div>
+                </div>
+            </a>
+            
+        {% endfor %}
+
+        <div style="clear: both"></div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+    $('.withImage').hover(function(){
+      $(this).children('.thumbnail').removeClass('grayscale');
+    },function(){
+      $(this).children('.thumbnail').addClass('grayscale');
+    });
+
+    const item_width = 430;
+    var resizeFunc = function() {
+        var max_width = $( "#mosaic-container" ).width();
+        const quotient = Math.max(1,Math.floor(max_width/item_width));
+        $( "#mosaic" ).width(quotient * item_width);
+    }
+    $( document ).ready(resizeFunc);
+    $( window ).on( "resize", resizeFunc);
+  
+  </script>

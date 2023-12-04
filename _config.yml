@@ -7,11 +7,12 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Jake Welde"
+subtitle                 : "geometry, dynamics, and design for robotics"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Jake Welde"
+description              : &description "Robotics at the Intersection of Geometry, Dynamics, and Design"
+url                      : /home/jake/Projects/academicpages/_site   # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -80,14 +81,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  name             : "Jake Welde"
+  avatar           : "headshot.jpg"
+  bio              : "PhD candidate in robotics working at the intersection of geometry, dynamics, and design."
+  location         : "Philadelphia, PA"
+  employer         : "University of Pennsylvania"
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=u8f4WQ0AAAAJ&hl=en"
+  email            : "jwelde@seas.upenn.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,24 +97,24 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : 
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : 
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "UCSeKIVQFA5OMHBz9s9YUfcw"
   wikipedia        :
 
 
@@ -178,7 +179,13 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  journal:
+    output: true
+    permalink: /:collection/:path/
+  conference:
+    output: true
+    permalink: /:collection/:path/
+  preprint:
     output: true
     permalink: /:collection/:path/
   portfolio:
@@ -218,10 +225,28 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _journal
   - scope:
       path: ""
-      type: publications
+      type: journals
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _conference
+  - scope:
+      path: ""
+      type: conference
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _conference
+  - scope:
+      path: ""
+      type: preprint
     values:
       layout: single
       author_profile: true
@@ -232,7 +257,7 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: work
       author_profile: true
       share: true
       comment: true
