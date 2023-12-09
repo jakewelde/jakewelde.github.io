@@ -25,18 +25,13 @@ redirect_from:
     }
 
 #mosaic div.withImage {
-    width: 370px;
-    height: 240pt;
     float: left;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 30px;
     margin-right: 30px;
     cursor: pointer;
-    /* box-shadow: 0px 0px 5px 1px #ccc; */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 240pt;
+    width: 370px;
   }
 
   #mosaic div.thumbnail {
@@ -44,7 +39,7 @@ redirect_from:
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 300px ;
-    width: 370px;
+    width: 100%;
     height: 218pt;
   }
 
@@ -67,6 +62,10 @@ redirect_from:
 
   #mosaic a:hover {
     text-decoration: none;
+  }
+
+  #mosaic a {
+    color: black;
   }
 
 </style>
@@ -105,11 +104,19 @@ redirect_from:
       $(this).children('.thumbnail').addClass('grayscale');
     });
 
-    const item_width = 430;
+    const item_width = 370 + 60;
+    // const item_width = 430;
     var resizeFunc = function() {
+        console.log("width:" + $("#mosaic div.withImage").outerWidth());
         var max_width = $( "#mosaic-container" ).width();
-        const quotient = Math.max(1,Math.floor(max_width/item_width));
-        $( "#mosaic" ).width(quotient * item_width);
+        const quotient = Math.floor(max_width/item_width);
+        if(quotient < 1) {
+            $("#mosaic div.withImage").width(max_width - 60);
+            $( "#mosaic" ).width(max_width);
+        } else {
+            $("#mosaic div.withImage").width(item_width - 60);
+            $( "#mosaic" ).width(quotient * item_width);
+        }
     };
     $( document ).ready(resizeFunc);
     $( window ).on( "resize", resizeFunc);

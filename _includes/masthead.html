@@ -2,14 +2,35 @@
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
+    <style>
+
+        nav button {
+            height: 40px !important; 
+        }
+
+        .masthead {
+            height: 73px !important;
+        }
+
+        ul.visible-links span.tagline {
+            display: inline;
+        }
+
+        ul.hidden-links span.tagline {
+            display: none;
+        }
+
+    </style>
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg">
+          <li class="masthead__menu-item masthead__menu-item--lg" id="site_title">
             <a href="{{ base_path }}/">
-                {{ site.title }} |
-                <span class="tagline">{{ site.subtitle }}</span>
+                {{ site.title }} 
+                {% if site.subtitle %}
+                    <span class="tagline">| {{ site.subtitle }}</span>
+                {% endif %}
             </a>
           </li>
           {% for link in site.data.navigation.main %}
@@ -23,6 +44,7 @@
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+
     </div>
   </div>
 </div>

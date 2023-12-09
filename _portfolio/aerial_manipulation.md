@@ -8,6 +8,9 @@ year: 2021
 publications:
   - key: Welde2021
   - key: Welde2020
+redirect_from: 
+  - /icra2020
+  - /ral2021
 ---
 
 2021

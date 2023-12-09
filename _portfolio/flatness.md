@@ -1,6 +1,6 @@
 ---
-short_title: "Equivariant Flat Outputs"
-title: "Flat Output Discovery for Mechanical Systems via Symmetry and Numerical Optimization"
+short_title: "Flatness and Symmetry"
+title: "Identifying Equivariant Flat Outputs for Mechanical Systems"
 excerpt: ""
 collection: portfolio
 thumbnail: "/images/flat_systems.svg"
