@@ -38,9 +38,9 @@ redirect_from:
     -webkit-transition: all 150ms;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 300px ;
+    background-size: cover;
     width: 100%;
-    height: 218pt;
+    height: 290px;
   }
 
 .grayscale {
@@ -106,17 +106,18 @@ redirect_from:
 
     const item_width = 370 + 60;
     var resizeFunc = function() {
-        console.log("width:" + $("#mosaic div.withImage").outerWidth());
+/*        console.log("width:" + $("#mosaic div.withImage").outerWidth()); */
         var max_width = $( "#mosaic-container" ).width();
         const quotient = Math.floor(max_width/item_width);
         if(quotient < 1) {
             $("#mosaic div.withImage").width(max_width - 60);
+            $("#mosaic div.thumbnail").height((max_width - 60)*(290.0/370.0));
             $( "#mosaic" ).width(max_width);
-            console.log("single image, scaling to width "+ max_width)
+/*            console.log("single image, scaling to width "+ max_width)*/ 
         } else {
             $("#mosaic div.withImage").width(item_width - 60);
             $( "#mosaic" ).width(quotient * item_width);
-            console.log("n=" + quotient + " images in width "+max_width)
+/*            console.log("n=" + quotient + " images in width "+max_width) */
         }
     };
     $( document ).ready(resizeFunc);
