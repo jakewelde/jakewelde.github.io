@@ -113,9 +113,11 @@ redirect_from:
         if(quotient < 1) {
             $("#mosaic div.withImage").width(max_width - 60);
             $( "#mosaic" ).width(max_width);
+            console.log("single image, scaling to width "+ max_width)
         } else {
             $("#mosaic div.withImage").width(item_width - 60);
             $( "#mosaic" ).width(quotient * item_width);
+            console.log("n=" + quotient + " images in width "+max_width)
         }
     };
     $( document ).ready(resizeFunc);
