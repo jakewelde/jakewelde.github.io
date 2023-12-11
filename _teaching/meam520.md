@@ -1,11 +1,13 @@
 ---
 title: "MEAM 520: Introduction to Robotics"
+short_title: "Introduction to Robotics"
 collection: teaching
 role: Head TA for Prof. Cynthia Sung and Prof. M. Ani Hsieh
 type: "Graduate course with some advanced undergrads"
 permalink: /teaching/meam520
 venue: "University of Pennsylvania"
 semester: "Fall 2020 and Fall 2021"
+thumbnail: "/images/meam520/franka_block.jpg"
 # location: "City, Country"
 gallery:
   - url: meam520/score_1.png
@@ -63,7 +65,7 @@ We also introduced a final project tournament as an exciting opportunity for stu
 
 ## Fall 2021: Industrial Robot Hardware
 
-The next semester, at the request of Prof. Ani Hsieh, the department invested in two Franka Emika Panda arms for the course, a drastic improvement over the hobby-grade Lynxmotion arms previously used. The move to a redundant 7-DOF manipulator required the development of a new inverse kinematics lab assignment that asked students to resolve this redundancy, which I spearheaded. The move to higher-performing manipulators also enabled a much more impressive [final demo](https://www.youtube.com/watch?v=kSxYnSfTZAQ), largely thanks to the integration efforts of other Head TA's Torrie Edwards and Xu Liu. Shane and I both received the Outstanding TA Award in the Mechanical Engineering department for our instruction in the course this semester.
+The next semester, at the request of Prof. Ani Hsieh, the department invested in two Franka Emika Panda arms for the course, a drastic improvement over the hobby-grade Lynxmotion arms previously used. The move to a redundant 7-DOF manipulator required the development of a new inverse kinematics lab assignment that asked students to resolve this redundancy, which I spearheaded. The move to higher-performing manipulators also enabled a much more impressive [final demo](https://www.youtube.com/watch?v=kSxYnSfTZAQ), largely thanks to the integration efforts of other Head TA's Torrie Edwards and Xu Liu. Shane and I both received the "Outstanding TA Award" in the Mechanical Engineering department for our instruction in the course this semester.
 
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/0o74lGcMhaA" frameborder="0" allowfullscreen></iframe>

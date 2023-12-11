@@ -1,14 +1,3 @@
----
-layout: archive
-permalink: /
-author_profile: true
-hide_title: true
-title: "Work"
-redirect_from: 
-  - /research/
-  - /research.html
----
-
 {% include base_path %}
 
 <style>
@@ -37,7 +26,7 @@ redirect_from:
   #mosaic div.thumbnail {
     -webkit-transition: all 150ms;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     width: 100%;
     height: 290px;
@@ -75,7 +64,7 @@ redirect_from:
 
     <div id="mosaic">
         
-        {% assign projects = site.portfolio | sort: 'year' | reverse  %}
+        {% assign projects = include.posts | sort: 'year' | reverse  %}
         {% for post in projects %}
             <a href="{{ base_path }}{{ post.url }}" rel="permalink">
                 <div class="item withImage" >

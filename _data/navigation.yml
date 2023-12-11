@@ -2,10 +2,10 @@
 main:
   - title: "Work"
     url: /research/
+  - title: "Teaching"
+    url: /teaching/    
   - title: "Publications"
     url: /publications/
-  # - title: "Teaching"
-  #   url: /teaching/    
   - title: "About"
     url: /about/    
 
