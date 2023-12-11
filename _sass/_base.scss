@@ -178,6 +178,11 @@ li ol {
 
 /* Figures and images */
 
+iframe,
+.fluid-width-video-wrapper {
+  margin-bottom: 2em;
+}
+
 figure {
   display: -webkit-box;
   display: flex;
