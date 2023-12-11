@@ -12,7 +12,7 @@ subtitle                 : "geometry, dynamics, and design for robotics"
 title_separator          : "-"
 name                     : &name "Jake Welde"
 description              : &description "Robotics at the Intersection of Geometry, Dynamics, and Design"
-url                      : https://jakewelde.github.io   # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://www.jakewelde.com   # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jakewelde/jakewelde.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -86,7 +86,7 @@ author:
   bio              : "PhD candidate in robotics working at the intersection of geometry, dynamics, and design."
   location         : "Philadelphia, PA"
   employer         : "University of Pennsylvania"
-  pubmed           : 
+  pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=u8f4WQ0AAAAJ&hl=en"
   email            : "jwelde@seas.upenn.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -97,20 +97,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : 
+  github           :
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : 
+  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          :
   vine             :
   weibo            :
   xing             :
