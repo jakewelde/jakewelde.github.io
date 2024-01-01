@@ -75,6 +75,12 @@ Take a look at my [research](/portfolio/) and [publications](/publications) to l
         </td>
     </tr>
     <tr>
+        <td>July 2023</td>
+        <td>
+            I gave a contributed talk about our work on the connections between differential flatness and Noetherian symmetry at the 2023 SIAM Conference on Control and Its Applications here in Philadelphia.
+        </td>
+    </tr>
+    <tr>
         <td>May 2023</td>
         <td>
             I was at ICRA 2023 in London, sharing our work on 
