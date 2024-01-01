@@ -61,7 +61,7 @@ Take a look at my [research](/portfolio/) and [publications](/publications) to l
         <td>January 2024</td>
         <td>
             I was invited to give a talk at the 2024 Joint 
-            Mathematics Meeting in San Francisco in the special 
+            Mathematics Meetings in San Francisco in the special 
             session on "Geometry and Symmetry in Differential 
             Equations, Control, and Applications".
         </td>
