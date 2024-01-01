@@ -10,6 +10,7 @@ year: '2023'
 authors: '<b>Jake Welde</b>, Matthew D. Kvalheim, and Vijay Kumar'
 arxiv: 'https://arxiv.org/abs/2303.15535'
 pdf: 'https://arxiv.org/pdf/2303.15535.pdf'
+talk: '/files/CDC_2023.pdf'
 thumbnail: 'almost_global.png'
 citation_key: 'Welde2023b'
 ---
