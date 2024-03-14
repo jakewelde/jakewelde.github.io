@@ -244,6 +244,7 @@ figcaption {
   color: mix(#fff, $text-color, 25%);
   font-family: $caption-font-family;
   font-size: 13pt;
+  text-align: justify;
 
   a {
     color: inherit;

@@ -70,7 +70,7 @@ Take a look at my [research](/portfolio/) and [publications](/publications) to l
         <td>December 2023</td>
         <td>
             I will be at IEEE CDC 2023 in Singapore, presenting 
-            our work on almost global asmyptotic stability in 
+            our work on almost global asymptotic stability in 
             cascade systems.
         </td>
     </tr>
