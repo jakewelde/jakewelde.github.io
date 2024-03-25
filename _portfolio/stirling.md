@@ -22,9 +22,8 @@ gallery:
 
 Machine Design and Manufacturing, Fall 2017
 
-![image-center](/images/stirling.jpg){: .align-center}
+{% include figure image_path="/images/stirling.jpg" caption="Stirling engine electromechanical generator designed and manufactured from partial plans over a semester's time. Custom soft iron core windings, brass flywheel, and painted wood base." %}
 
-Stirling engine electromechanical generator designed and manufactured from partial plans over a semester's time. Custom soft iron core windings, brass flywheel, and painted wood base.
 
 ![image-center](/images/stirling/engine2.jpg){: .align-center}
 
