@@ -1,5 +1,5 @@
 ---
-short_title: "Tracking Moving Targets"
+short_title: "Target Tracking"
 title: "Autonomous Flight for Detection, Localization, and Tracking of Moving Targets With a Small Quadrotor"
 excerpt: ""
 collection: portfolio

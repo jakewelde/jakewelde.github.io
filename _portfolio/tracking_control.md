@@ -1,5 +1,5 @@
 ---
-short_title: "Geometric Tracking Control"
+short_title: "Tracking Control"
 title: "Tracking Control on Homogeneous Riemannian Manifolds"
 excerpt: ""
 collection: portfolio
