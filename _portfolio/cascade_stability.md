@@ -3,7 +3,7 @@ short_title: "Cascade Stability"
 title: "Almost Global Asymptotic Stability of Cascade Systems"
 excerpt: ""
 collection: portfolio
-thumbnail: "/images/almost_global.png"
+thumbnail: "/images/torus_cascade_transparent.gif"
 year: 2023
 publications:
   - key: Welde2023b
@@ -13,7 +13,7 @@ publications:
 
 *with Matthew D. Kvalheim and Vijay Kumar*
 
-![image-center](/images/almost_global.png){: .align-center}
+![image-center](/images/torus_cascade_transparent.gif){: .align-center}
 
 In this work, we give sufficient conditions for the
 almost global asymptotic stability of a cascade in which the
