@@ -30,7 +30,7 @@ and furthering our collective understanding of Nature for the benefit of all.
 
 Take a look at my [research](/portfolio/) and [publications](/publications) to learn more about my work.
 
-[Curriculum Vitae](/files/curriculum_vitae.pdf) (December 2023)
+[Curriculum Vitae](/files/curriculum_vitae.pdf) (Spring 2024)
 
 ## Recent Updates
 
