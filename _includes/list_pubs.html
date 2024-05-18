@@ -1,76 +1,91 @@
 
+
+{% if include.pubs and include.pubs.size != 0 %}
+
+{% if include.heading %}
+    {% assign heading = include.heading %}
+{% else %}
+    {% assign heading = include.pubs[0].collection | capitalize %}
+{% endif %}
+
+<h2>{{heading}}</h2>
+
 <ol {% if include.reversed%} reversed {% endif %}>
-   
 
-{% for post in include.pubs reversed %}
-
-{% include base_path %}
-
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
-
-<li class="publication_item" >
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <div>
-        <b>"{{ post.title }}"</b>, <br />
-        {{ post.authors }}. <br />
-        <i>{{ post.venue }}</i>, {{ post.year }}.
-        <br />
-
-        <ul class="paper_links">
-            {% if post.paperurl %}
-                <li>
-                    <a href="{{ post.paperurl }}">
-                        Article</a>
-                </li>
+    {% for post in include.pubs reversed %}
+    
+    {% include base_path %}
+    
+    {% if post.header.teaser %}
+      {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+    {% else %}
+      {% assign teaser = site.teaser %}
+    {% endif %}
+    
+    {% if post.id %}
+      {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+    {% else %}
+      {% assign title = post.title %}
+    {% endif %}
+    
+    
+    <li class="publication_item" >
+    <div class="{{ include.type | default: "list" }}__item">
+      <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+        <div>
+            <b>"{{ post.title }}"</b>, <br />
+            {{ post.authors }}. <br />
+            <i>{{ post.venue }}</i>, {{ post.year }}.
+            <br />
+    
+            <ul class="paper_links">
+                {% if post.paperurl %}
+                    <li>
+                        <a href="{{ post.paperurl }}">
+                            Article</a>
+                    </li>
+                {% endif %}
+                {% if post.arxiv %}
+                    <li>
+                        <a href="{{ post.arxiv }}">
+                            arXiv</a>
+                    </li>    
+                {% endif %}
+                {% if post.pdf %}
+                    <li>
+                        <a href="{{ post.pdf }}">
+                            PDF</a>
+                    </li>
+                {% endif %}
+                {% if post.video %}
+                    <li>
+                        <a href="{{ post.video }}">
+                            Video</a>
+                    </li>    
+                {% endif %}
+                {% if post.talk %}
+                    <li>
+                        <a href="{{ post.talk }}">
+                            Talk</a>
+                    </li>    
+                {% endif %}
+            </ul>
+            {% if post.addendum %}
+            <b>{{ post.addendum }}</b>
             {% endif %}
-            {% if post.arxiv %}
-                <li>
-                    <a href="{{ post.arxiv }}">
-                        arXiv</a>
-                </li>    
-            {% endif %}
-            {% if post.pdf %}
-                <li>
-                    <a href="{{ post.pdf }}">
-                        PDF</a>
-                </li>
-            {% endif %}
-            {% if post.video %}
-                <li>
-                    <a href="{{ post.video }}">
-                        Video</a>
-                </li>    
-            {% endif %}
-            {% if post.talk %}
-                <li>
-                    <a href="{{ post.talk }}">
-                        Talk</a>
-                </li>    
-            {% endif %}
-        </ul>
-        {% if post.addendum %}
-        <b>{{ post.addendum }}</b>
-        {% endif %}
+        </div>
+      </article>
     </div>
-  </article>
-</div>
+    
+    </li>
+    
+    {% endfor %}
+    
+    </ol>
+    
+    
 
-</li>
+{% endif %}
 
-{% endfor %}
-
-</ol>
 
 

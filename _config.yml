@@ -188,6 +188,9 @@ collections:
   preprint:
     output: true
     permalink: /:collection/:path/
+  workshop:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -243,10 +246,19 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _conference
+  # _preprint
   - scope:
       path: ""
       type: preprint
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true  
+  # _workshop
+  - scope:
+      path: ""
+      type: workshop
     values:
       layout: single
       author_profile: true

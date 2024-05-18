@@ -58,8 +58,6 @@ layout: default
       </section>
 
         {% if page.publications %}
-            <h2>Relevant Publications</h2>
-
             {% assign relevant_pubs = "" | split: ',' %}
             {% for pub in page.publications %}
                 {% assign pre = site.preprint | where:"citation_key", pub.key  | first %}
@@ -74,8 +72,12 @@ layout: default
                 {% if co %}
                     {% assign relevant_pubs = relevant_pubs | push: co %}
                 {% endif %}
+                {% assign co = site.workshop | where:"citation_key", pub.key  | first %}
+                {% if co %}
+                    {% assign relevant_pubs = relevant_pubs | push: co %}
+                {% endif %}
             {% endfor %}
-            {% include list_pubs.html pubs=relevant_pubs %}
+            {% include list_pubs.html pubs=relevant_pubs heading="Relevant Publications" %}
         {% endif %}
 
       <footer class="page__meta">

@@ -47,6 +47,13 @@ publist = {
         "venue-pretext" : "",
         "collection" : {"name":"preprint",
                         "permalink":"/preprint/"}
+    },
+    "workshop":{
+        "file": "refs.bib",
+        "venuekey" : "workshop",
+        "venue-pretext" : "",
+        "collection" : {"name":"workshop",
+                        "permalink":"/workshop/"}
     } 
 }
 
@@ -105,7 +112,7 @@ for pubsource in publist:
             #Build Citation from text
             authors = ""
 
-            #citation authors - todo - add highlighting for primary author?
+            #citation authors
             bibdata.entries[bib_id].persons["author"].reverse()
             last_author = True
             for author in bibdata.entries[bib_id].persons["author"]:

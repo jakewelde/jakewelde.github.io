@@ -9,15 +9,11 @@ An up-to-date list of publications can also be found on my <a href="{{site.autho
 
 {% include base_path %}
 
-## Preprint
-
 {% include list_pubs.html pubs=site.preprint reversed=true %}
-
-## Journal
 
 {% include list_pubs.html pubs=site.journal reversed=true %}
 
-## Conference
-
 {% include list_pubs.html pubs=site.conference reversed=true %}
+
+{% include list_pubs.html pubs=site.workshop reversed=true %}
 

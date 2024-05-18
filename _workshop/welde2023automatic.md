@@ -1,10 +1,10 @@
 ---
 title: "Towards Automatic Identification of Globally Valid Geometric Flat Outputs via Numerical Optimization"
-collection: preprint
-permalink: /preprint/welde2023automatic
+collection: workshop
+permalink: /workshop/welde2023automatic
 date: 2023-01-01
-venue: 'arXiv 2305.09442'
-citation: '<b>Jake Welde</b> and Vijay Kumar. &quot;Towards Automatic Identification of Globally Valid Geometric Flat Outputs via Numerical Optimization.&quot; arXiv 2305.09442, 2023.'
+venue: 'Geometric Representations Workshop, ICRA'
+citation: '<b>Jake Welde</b> and Vijay Kumar. &quot;Towards Automatic Identification of Globally Valid Geometric Flat Outputs via Numerical Optimization.&quot; Geometric Representations Workshop, ICRA, 2023.'
 year: '2023'
 authors: '<b>Jake Welde</b> and Vijay Kumar'
 arxiv: 'https://arxiv.org/abs/2305.09442'
