@@ -6,8 +6,8 @@ collection: portfolio
 thumbnail: "/images/pick_and_place.png"
 year: 2021
 publications:
-  - key: Welde2021
   - key: Welde2020
+  - key: Welde2021
 redirect_from: 
   - /icra2020
   - /ral2021
