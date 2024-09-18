@@ -5,7 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
-An up-to-date list of publications can also be found on my <a href="{{site.author.googlescholar}}">Google Scholar</a> page.
+An up-to-date list of publications can also be found on my <a href="{{site.author.googlescholar}}">Google Scholar</a> page. 
+<i><nobr>( <sup>*</sup> indicates</nobr> equal contribution.)</i>
 
 {% include base_path %}
 
