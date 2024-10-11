@@ -59,6 +59,13 @@ Take a look at my [research](/) and [publications](/publications) to learn more 
 
 <table id="recent_updates">
     <tr>
+        <td>Oct 2024</td>
+        <td>
+            Together with colleagues from Penn, Princeton, the University of Twente, and GE Healthcare, we are organizing the workshop <a href="https://equirob2024.github.io/">"Equivariant Robotics: The Role of Symmetry Across Perception, Estimation, and Control"</a> 
+            at IROS 2024. Join us to hear from researchers exploring symmetry across a wide range of problems and applications in robotics! 
+        </td>
+    </tr>
+    <tr>
         <td>May 2024</td>
         <td>
             I was accepted into the 2024 cohort of <a href="https://sites.google.com/view/rsspioneers2024/">RSS Pioneers</a>, an intensive career workshop that each year "brings together a cohort of the world’s top early-career researchers" in robotics, hosted at the <a href="https://roboticsconference.org/">Robotics: Science and Systems</a> conference.
