@@ -9,6 +9,7 @@ citation: '<b>Jake Welde<sup>*</sup></b>, Nishanth Rao<sup>*</sup>, Pratik Kunap
 year: '2024'
 authors: '<b>Jake Welde<sup>*</sup></b>, Nishanth Rao<sup>*</sup>, Pratik Kunapuli<sup>*</sup>, Dinesh Jayaraman, and Vijay Kumar'
 pdf: 'https://arxiv.org/pdf/2409.11238'
+video: 'https://www.youtube.com/watch?v=AosGBe2uzxM'
 citation_key: 'welde2024leveragingsymmetryacceleratelearning'
 ---
 [Access paper here](https://arxiv.org/abs/2409.11238){:target="_blank"}
