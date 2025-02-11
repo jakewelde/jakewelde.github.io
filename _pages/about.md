@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "Jake Welde: Geometry, Dynamics, and Design for Robotics"
+title: "Jake Welde: Geometry, Design, and Control for Robotics"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -10,7 +10,7 @@ redirect_from:
 I am a PhD Candidate in Mechanical Engineering and Applied Mechanics,
 working in the [GRASP Laboratory](https://www.grasp.upenn.edu/) 
 at the [University of Pennsylvania](https://www.upenn.edu/), 
-supervised by [Dr. Vijay Kumar](https://www.kumarrobotics.org/). 
+supervised by [Prof. Vijay Kumar](https://www.kumarrobotics.org/). 
 I also completed my Bachelor's in Mechanical Engineering and Masters 
 in Robotics here at Penn.    
 
@@ -30,7 +30,7 @@ and furthering our collective understanding of Nature for the benefit of all.
 
 Take a look at my [research](/) and [publications](/publications) to learn more about my work.
 
-[Curriculum Vitae](/files/curriculum_vitae.pdf) (Spring 2024)
+[Curriculum Vitae](/files/curriculum_vitae.pdf) (Winter 2025)
 
 ## Recent Updates
 
@@ -58,6 +58,13 @@ Take a look at my [research](/) and [publications](/publications) to learn more 
 
 
 <table id="recent_updates">
+    <tr>
+        <td>Dec 2024</td>
+        <td>
+            <a href="https://pratikkunapuli.github.io/EQTrackingControl/">Our work</a> exploiting symmetry to learn tracking controllers 
+            won a Best Paper Award at the <a href="https://www.neurreps.org/">Workshop on Symmetry and Geometry in Neural Representations</a> at NeurIPS 2024!
+        </td>
+    </tr>
     <tr>
         <td>Oct 2024</td>
         <td>

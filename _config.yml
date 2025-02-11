@@ -8,10 +8,10 @@
 # Site Settings
 locale                   : "en-US"
 title                    : "Jake Welde"
-subtitle                 : "geometry, dynamics, and design for robotics"
+subtitle                 : "geometry, design, and control for robotics"
 title_separator          : "-"
 name                     : &name "Jake Welde"
-description              : &description "Robotics at the Intersection of Geometry, Dynamics, and Design"
+description              : &description "Robotics at the Intersection of Geometry, Design, and Control"
 url                      : https://www.jakewelde.com   # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jakewelde/jakewelde.github.io"
@@ -83,7 +83,7 @@ analytics:
 author:
   name             : "Jake Welde"
   avatar           : "headshot.jpg"
-  bio              : "PhD candidate in robotics working at the intersection of geometry, dynamics, and design."
+  bio              : "PhD candidate in robotics working at the intersection of geometry, design, and control."
   location         : "Philadelphia, PA"
   employer         : "University of Pennsylvania"
   pubmed           :
